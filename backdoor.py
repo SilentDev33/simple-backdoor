@@ -1,8 +1,8 @@
 import telebot
 import subprocess
-userId = 111 #user id
+userId = 12345678 #user id
 import requests
-token =  "11" # bot token
+token =  "bot_token" # 
 response_ip = requests.get('https://api64.ipify.org?format=json').json()  # check connection
 ip_address = response_ip["ip"]
 bot = telebot.TeleBot(token)
